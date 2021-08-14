@@ -1,0 +1,6 @@
+{
+    "require": {
+        "evilfreelancer/routeros-api-php": "^1.4",
+        "libern/qr-code-reader": "^1.0"
+    }
+}
