@@ -25,10 +25,10 @@ if($_SESSION['self'] == 1){
         // Create config object with parameters
         $config =
         (new Config())
-            ->set('host', '172.20.10.5')
-            ->set('port', 8728)
-            ->set('pass', 'Loris991')
-            ->set('user', 'admin');
+        ->set('host', "$ros_ip")
+        ->set('port', 8728)
+        ->set('pass', "$ros_password")
+        ->set('user', "$ros_username");
 
         // Initiate client with config object
         $client = new Client($config);
@@ -69,10 +69,10 @@ if($_SESSION['self'] == 1){
 // Create config object with parameters
 $config =
     (new Config())
-        ->set('host', '172.20.10.5')
+        ->set('host', "$ros_ip")
         ->set('port', 8728)
-        ->set('pass', 'Loris991')
-        ->set('user', 'admin');
+        ->set('pass', "$ros_password")
+        ->set('user', "$ros_username");
 
 // Initiate client with config object
 $client = new Client($config);
